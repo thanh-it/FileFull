@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="FirstScreen.SigninActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user"
+            android:text="Username"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textuser"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pass"
+            android:text="Password"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/user"
+            android:layout_below="@+id/user"
+            android:layout_toRightOf="@id/textpass"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/retextpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/repass"
+            android:text="RePassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/repass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/pass"
+            android:layout_below="@+id/pass"
+            android:layout_toRightOf="@id/retextpass"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/phone"
+            android:text="Phone Number"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/repass"
+            android:layout_below="@id/repass"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/signinnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="REGISTER" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
