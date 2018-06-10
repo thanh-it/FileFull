@@ -5,7 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.thanh_it.qlsv.FirstActivity;
 import com.example.thanh_it.qlsv.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,6 +20,8 @@ public class LoginActivity extends AppCompatActivity {
         Button login = (Button) findViewById(R.id.login);
         final Button signin = (Button) findViewById(R.id.signin);
         final Button forgot = (Button) findViewById(R.id.forgot);
+        EditText username = findViewById(R.id.user);
+        EditText password = findViewById(R.id.pass);
         //Đăng nhập vào hệ thống
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +47,15 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginok() {
         //TODO code
+        EditText username = findViewById(R.id.user);
+        EditText password = findViewById(R.id.pass);
+        if(username.getText().toString().equalsIgnoreCase("admin_he_thong")&&password.getText().toString().equalsIgnoreCase("LaptrinhAndroid")){
+            Intent intent = new Intent(LoginActivity.this, FirstActivity.class);
+            Toast.makeText(LoginActivity.this, "Welcome to DeathClick", android.widget.Toast.LENGTH_SHORT).show();
+            startActivity(intent);
+        }else{
+            Toast.makeText(LoginActivity.this, "Liên hệ nhóm DeathClick để có quyền vào hệ thống", android.widget.Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void forgotpass() {

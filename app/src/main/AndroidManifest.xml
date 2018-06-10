@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".login_sign_forgot.SigninActivity" />
-        <activity android:name=".login_sign_forgot.ForgotActivity"></activity>
+        <activity android:name=".login_sign_forgot.ForgotActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".QLLOP.AddClassActivity" />
+        <activity android:name=".QLLOP.ViewClassActivity" />
+        <activity android:name=".QLSV.AddStudentActivity" />
+        <activity android:name=".QLSV.ViewStudentActivity"></activity>
     </application>
 
 </manifest>

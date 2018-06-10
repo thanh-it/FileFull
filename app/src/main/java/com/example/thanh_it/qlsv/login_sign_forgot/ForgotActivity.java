@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.thanh_it.qlsv.DBQLDATA.Account;
 import com.example.thanh_it.qlsv.DBQLDATA.DBQL;
@@ -38,7 +39,22 @@ public class ForgotActivity extends AppCompatActivity {
         DBQL sqLiteDatabase = new DBQL(ForgotActivity.this);
         SQLiteDatabase liteDatabase = sqLiteDatabase.getReadableDatabase();
         Cursor cursor = liteDatabase.rawQuery("Select * from ACCOUNT",null);
-
-        
+        Account account = new Account();
+        if(cursor == null)
+        {
+            return;
+        }
+        if (cursor.moveToFirst()) {
+            //Loop through the table rows
+            do {
+                account.setUser(cursor.getString(1));
+                account.setPass(cursor.getString(2));
+                account.setNumber(cursor.getInt(3));
+                mAccount.add(account);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        liteDatabase.close();
+        sqLiteDatabase.close();
     }
 }

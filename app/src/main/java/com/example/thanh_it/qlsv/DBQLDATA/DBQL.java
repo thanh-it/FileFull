@@ -12,7 +12,7 @@ public class DBQL extends SQLiteOpenHelper {
             "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
             "USER TEXT ," +
             "PASS TEXT ,"+
-            "PHONE int)";
+            "PHONE INTEGER)";
     private static final String SQL_CREATE_LOP="Create table LOP (" +
             "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
             "MALOP TEXT ," +

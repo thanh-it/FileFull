@@ -48,7 +48,8 @@
                 android:layout_alignRight="@id/user"
                 android:layout_below="@+id/user"
                 android:layout_toRightOf="@id/textpass"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="textPassword" />
 
         </RelativeLayout>
 
