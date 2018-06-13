@@ -5,5 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QLLOP.ViewClassActivity">
-
+        <ListView
+            android:id="@+id/viewlistclass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView" >
+        </ListView>
 </android.support.constraint.ConstraintLayout>
