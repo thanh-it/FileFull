@@ -22,7 +22,8 @@ public class DBQL extends SQLiteOpenHelper {
             "MSSV TEXT ," +
             "NAME TEXT ,"+
             "SN TEXT,"+
-            "MALOP TEXT )";
+            "MALOP TEXT,"+
+            "NGAYHOC TEXT)";
     public DBQL(Context context) {
         super(context, name, null, version);
     }

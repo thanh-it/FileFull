@@ -2,7 +2,15 @@ package com.example.thanh_it.qlsv.DBQLDATA;
 
 public class Student {
     private long id;
-    private String mssv,tensv,ngaysinh,malop;
+    private String mssv,tensv,ngaysinh,malop,ngayhoc;
+
+    public String getNgayhoc() {
+        return ngayhoc;
+    }
+
+    public void setNgayhoc(String ngayhoc) {
+        this.ngayhoc = ngayhoc;
+    }
 
     public long getId() {
         return id;

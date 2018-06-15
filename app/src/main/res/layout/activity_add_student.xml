@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="223dp"
+            android:layout_height="149dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img" />
+
         <EditText
             android:id="@+id/mssv"
             android:layout_width="match_parent"
@@ -21,11 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tên Sinh Viên" />
+
         <EditText
-            android:id="@+id/khoahoc"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Khóa Học" />
+            android:hint="Ngày Sinh dd/mm/yyyy"
+            android:inputType="datetime" />
         <EditText
             android:id="@+id/malopsv"
             android:layout_width="match_parent"
